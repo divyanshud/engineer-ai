@@ -1,24 +1,37 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## About
 
-Things you may want to cover:
+This is a sample project for engineer-ai for secret key genration and signup using that key.
 
-* Ruby version
+## Installation
 
-* System dependencies
+Steps for setup are
+```bash
+bundle install
+rake db:create
+rake db:migrate
+rake db:seed
+```
 
-* Configuration
+## Usage
+Open localhost:3000 on browser after starting rails server using below command
 
-* Database creation
+```
+rails s
+```
 
-* Database initialization
+## Credentials
+The credentials to login are -
 
-* How to run the test suite
+| Email  |Role   | Password  |
+| ------------ | ------------ | ------------ |
+|admin@gmail.com | Admin | heroku|
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Note
+1. Please check the environment variables in your application.yml for the different credentials before initiating the setup.
+2. For sake for easiness we have created an admin user and 10 secret codes using seed file.
+3. We don't push application.yml in github but for ease we have provided it.
+## Author
+Name - Divyanshu Dadheech 
+Email- divyanshudadheech@gmail.com
