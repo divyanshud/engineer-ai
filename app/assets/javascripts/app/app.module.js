@@ -12,7 +12,6 @@ angular.module('engineerAi', [
 
 angular.module('engineerAi')
   .controller('RootController', ['$scope','$rootScope','$state',function($scope,$rootScope,$state) {
-
     $rootScope.$on('$stateChangeError', function(event, toState, toParams, fromState, fromParams, error, ipCookie) {
         event.preventDefault();
           if( error.status == 401  ){
